@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <style media="screen">
+      body{
+        background-image: url("background3.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:black;
+        color:white;
+      }
+    .sun{
+      margin-top: 1px;
+
+      border:1px solid gold;
+      height:100px;
+      width:100px;
+      border-radius:50px;
+      background-color:gold;
+    }
+    .planet7{
+      margin-top: 5px;
+
+        border:1px solid violet;
+        height:800px;
+        width:800px;
+        border-radius:400px;
+        background-image: url("background2.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+
+
+
+    }
+    .planet6{
+      margin-top: 5px;
+
+        border:1px solid violet;
+        height:700px;
+        width:700px;
+        border-radius:350px;
+
+
+
+
+    }
+    .planet{
+      margin-top: 1px;
+
+        border:1px solid aqua;
+        height:600px;
+        width:600px;
+        border-radius:300px;
+
+
+    }
+    .planet1{
+      margin-top: 4px;
+
+        border:1px solid brown;
+        height:500px;
+        width:500px;
+        border-radius:250px;
+
+    }
+    .planet3{
+      margin-top: 3px;
+
+        border:1px solid lightblue;
+        height:400px;
+        width:400px;
+        border-radius:200px;
+
+    }
+
+    .planet2{
+      margin-top: 3px;
+
+        border:1px solid silver;
+        height:300px;
+        width:300px;
+        border-radius:150px;
+
+
+    }
+    .planet4{
+      margin-top: 2px;
+
+        border:1px solid red;
+        height:200px;
+        width:200px;
+        border-radius:100px;
+    background-color:#FF9900;
+    }
+    .planet3item{
+margin-top: 1px;
+
+        border:1px solid aqua;
+        height:40px;
+        width:40px;
+        border-radius:20px;
+        background-image: url("Jupiter.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:aqua;
+
+    }
+    .planet4item{
+      margin-top: 3px;
+
+        border:1px solid lightblue;
+        height:30px;
+        width:30px;
+        border-radius:15px;
+        background-image: url("earth.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:lightblue;
+
+    }
+    .planet2item{
+      margin-top: 5px;
+
+        border:1px solid silver;
+        height:30px;
+        width:30px;
+        border-radius:15px;
+        background-image: url("Venus.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:silver;
+
+    }
+    .planetitem{
+      margin-top: 2px;
+
+        border:1px solid red;
+        height:30px;
+        width:30px;
+        border-radius:15px;
+        background-image: url("Mercury.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:red;
+
+    }
+    .planet5item{
+      margin-top: 3px;
+
+        border:1px solid brown;
+        height:30px;
+        width:30px;
+        border-radius:15px;
+        background-image: url("Mars.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:brown;
+
+    }
+    .planet6item{
+      margin-top: 2px;
+
+        border:1px solid violet;
+        height:30px;
+        width:30px;
+        border-radius:15px;
+        background-image: url("Uranus.jpg");
+        background-size: cover;
+          background-repeat: no-repeat;
+        background-color:violet;
+
+
+    }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <p style="color:black">Welcome to Marko Ewoi solar system</p>
+    <br><br>
+    <center>
+      <div class="planet7" id="planet7">
+        <br><br>
+<div class="planet6" id="planet6">
+  <div class="planet6item" >
+<p>Uranus</p>
+  </div>
+<br>
+    <div class="planet" id="planet">
+      <div class="planet3item">
+<p>Jupiter</p>
+      </div>
+<br>
+<div class="planet1" id="planet1">
+  <div class="planet5item" >
+<p>Mars</p>
+  </div>
+  <br>
+  <div class="planet3" id="planet3">
+<div class="planet4item" id="planet3item">
+<p>Earth</p>
+</div>
+<br>
+<div class="planet2" id="planet2">
+  <div class="planet2item" id="planet3item">
+<p>Venus</p>
+  </div>
+  <br>
+<div class="planet4" id="planet4">
+  <div class="planetitem" id="planet3item">
+<p>Mercury</p>
+  </div>
+
+
+
+  <br>
+
+  <div class="sun">
+<p></p>
+</div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+</center>
+<script type="text/javascript">
+setTimeout(myfun,0);
+setInterval(myfun,30000);
+function myfun(){
+
+
+
+  var canvas = document.getElementById("planet");
+
+  canvas.animate(
+  [
+  {transform:'rotate(0deg)'},
+  {transform:'rotate(360deg)'}
+  ],
+  {duration:25000}
+  );
+  var canvas2 = document.getElementById("planet1");
+
+  canvas2.animate(
+  [
+  {transform:'rotate(0deg)'},
+  {transform:'rotate(360deg)'}
+  ],
+  {duration:30000}
+  );
+  var canvas3 = document.getElementById("planet3");
+
+  canvas3.animate(
+  [
+  {transform:'rotate(0deg)'},
+  {transform:'rotate(360deg)'},
+
+  ],
+  {duration:25000}
+  );
+  var canvas4 = document.getElementById("planet4");
+
+  canvas4.animate(
+  [
+  {transform:'rotate(0deg)'},
+  {transform:'rotate(360deg)'}
+
+  ],
+  {duration:30000}
+  );
+  var canvas6 = document.getElementById("planet6");
+
+  canvas6.animate(
+  [
+  {transform:'rotate(0deg)'},
+  {transform:'rotate(360deg)'}
+
+  ],
+  {duration:30000}
+  );
+}
+</script>
+  </body>
+</html>
